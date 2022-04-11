@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}/*Header Start Here*/
+header h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3.5rem;
+    letter-spacing: 0.5rem;
+    position: absolute;
+    top: 38rem;
+    left: 42%;
+    font-weight: 300;
+    color: white;
+}
+#img{
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    top: 20rem;
+    left: 45%;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+header{
+    width: 100%;
+    height: 70rem;
+    background-image: linear-gradient(115deg, rgba(0, 10, 10, 0.658), rgba(10, 82, 127, 0.616)), url(https://wallpaperaccess.com/full/1223045.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    padding: 0%;
+}
+header h1 span{
+    font-size: 1.5rem;
+    font-family: "Space Mono", Arial, serif;
+    font-weight: 500;
+    letter-spacing: 0.25rem;
+    margin-left: -20rem;
+}
+/*Navigation Bar Start Here*/
+#navbar ul{
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    width: 70%;
+    justify-content: space-between;
+    left: 27%;
+    list-style: none;
+}
+#navbar li a{ 
+    text-decoration: none;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 100;
+    font-size: 2rem;
+}
+/*Responsive Start*/
+@media(max-width: 1020px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width: 480px){
+    html{
+        font-size: 30%;
+    }
+    #img{
+        left: 35%;
+    }
+    header h1{
+        left: 30%;
+    }
+}
+/*Navigaton Bar Ends here*/
+#icon{
+    position: absolute;
+    top: 52rem;
+    left: 38%;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 35rem;
+
+}
+.icon{
+    padding: 0 2rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 1024px){
+    #navbar ul{
+        width: 100%;
+        left: 0;
+        padding: 0 1.5rem;
+    }
+}
+@media only screen and (max-width: 799px){
+    header h1 span{
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px){
+    html{
+        font-size: 45%;
+    }
+}
+@media only screen and (max-width: 480px){
+    #icon{
+        left: 25.5%;
+        top: 47rem;
+    }
+}
+@media(max-width: 375px){
+    html{
+        font-size: 30%;
+    }
+}
+/* Header End here!!*/
+/*Section colour*/
+section:nth-child(odd){
+    background-color: rgb(46,62,78);
+}
+section:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.075);
+}
+/*About me Section Start*/
+.a{
+    margin: 0%;
+    padding: 0.7rem 0;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.5rem;
+    font-size: 3.5rem;
+}
+.main-section h4{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2.5rem;
+    padding: 2rem 0 0 0;
+    margin: 0;
+}
+#contanier{
+    display: flex;
+    flex-wrap: wrap;
+}
+#details{
+    width: 30%;
+}
+#details ul{
+    list-style: none;
+    line-height: 5rem;
+    padding: 0 0 0 2rem;
+}
+#details ul li{
+    font-family: 'Playfair Display', serif;
+    font-weight: 650;
+    font-size: 1.8rem;
+}
+#my{
+    width: 70%;
+    padding: 0 3rem;
+}#my p{
+    line-height: 4rem;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2.5rem;
+}/*Responsive starts*/
+@media only screen and (max-width:672px){
+    #details ul li{
+        font-size: 1.2rem;
+    }
+    .main-section h4{
+        font-size: 1.8rem;
+    }
+    #my p{
+        font-size: 1.7rem;
+    }
+}
+/*About me Secton End*/
+/*My Resume Section Start*/
+.contain{
+    background-image:linear-gradient(115deg, rgba(43, 82, 121, 0.507), rgba(10, 82, 127, 0.616)), url(https://images.unsplash.com/photo-1599725427295-6ed79ff8dbef?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2Nob29sJTIwYnVpbGRpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.b{
+    text-align: center;
+    margin: 0;
+    padding: 0.7rem 0;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    letter-spacing: 0.5rem;
+    font-size: 3.0rem;
+}
+.h5{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.contanier{
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timeline{
+    width: 80%;
+    height: auto;
+    max-width: fit-content;
+    margin: 10% auto;
+    position: relative;
+}
+.timeline::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0.3rem;
+    background-color: rgb(145, 29, 73);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.timeline ul{
+    list-style: none;
+}
+.timeline ul li{
+    padding: 1rem;
+    background-color: rgb(145, 29, 73);
+    color: white;
+    border-radius: 1.5rem;
+    margin-bottom: 5rem;
+    width: 50%;
+    font-size: 1.6rem;
+}
+.timeline ul li:last-child{
+    margin-bottom: 0;
+}
+.timeline ul li:nth-child(odd){
+    float: left;
+    clear: right;
+    transform: translateX(-60px);
+}
+.timeline ul li:nth-child(even){
+    float: right;
+    clear: left;
+    transform: translateX(2rem);
+}
+.timeline ul li::after{
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: 50%;
+    top: 0;
+}
+.timeline ul li:nth-child(even)::after{
+    transform: translate(95%, -40%);
+    right: -3rem;
+}
+.timeline ul li:nth-child(odd)::after{
+    transform: translate(-95%, 20%);
+    left: -3rem;
+}
+/*My Resume Secton Ends*/
+/*My Service Section Start*/
+.my-sevice ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0%;
+    padding: 5rem 0;
+}
+.box{
+    width: 33%;
+}
+.my-sevice ul li{
+    text-align: center;
+    font-family: "Space Mono", Arial, serif;
+    padding: 1.5rem;
+    background-color: rgb(145, 29, 74);
+    color: white;
+    border-radius: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.service{
+    width: 13rem;
+    padding-bottom: 2rem;
+}
+/*My Service Section Ends*/
+/*Skill Section Starts*/
+.barbox{
+    padding-left: 13rem;
+    padding-bottom: 5rem;
+}
+.p{
+    font-size: 2.3rem;
+    color: white;
+}
+.bar{
+    background-color: rgba(241, 241, 241, 0.658);
+    width: 75%;
+    height: 3rem;
+    border-radius: 1.7rem;
+}
+.skill{
+    background-color: rgba(238, 64, 64, 0.836);
+    color: white;
+    padding: 0 1rem;
+    text-align: right;
+    font-size: 1.9rem;
+    height: 3rem;
+    border-radius: 1.7rem;
+}
+.html{
+    width: 80%;
+}
+.css{
+    width: 60%;
+}
+.java{
+    width: 68%;
+}
+.python{
+    width: 12%;
+}
+.design{
+    width: 70%;
+}
+.editing{
+    width: 85%;
+}
+/*Responsive starts*/
+@media only screen and (max-width: 480px){
+    .barbox{
+        padding-left: 6rem;
+    }
+    .bar{
+        width: 85%;
+        height: 2rem;
+    }
+    .p{
+        font-size: 1.6rem;
+    }
+    .html{
+        height: 2rem;
+    }
+    .css{
+        height: 2rem;
+    }
+    .java{
+        height: 2rem;
+    }
+    .python{
+        height: 2rem;
+    }
+    .design{
+        height: 2rem;
+    }
+    .editing{
+        height: 2rem;
+    }
+}
+/*Skill Section ends*/
+/*My Work Section Starts*/
+.project{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1.5rem;
+    
+}
+.project-img{
+    width: 50rem;
+}
+.project-title{
+    text-align: center;
+    color: white;
+    background-color: rgba(238, 64, 64, 0.836);
+    border-radius: 1.5rem;
+    letter-spacing: 0.7rem;
+    font-family: "Space Mono", Arial, serif;
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+.title .project-title{
+    text-decoration: none;
+}
+.title{
+    background-color: rgb(46,62,78);
+    padding: 4rem;
+    border-radius: 1.7rem;
+    margin-bottom: 2.5rem;
+    text-decoration: none;
+}
+/*Responsive work start*/
+@media only screen and (max-width: 672px){
+    .project-img{
+        width: 25rem;
+    }
+    .project-title{
+        font-size: 1.8rem;
+        letter-spacing: 0.15rem;
+    }
+    .title{
+        padding: 2.7rem;
+    }
+}
+/*My Work Section Ends*/
+/*Contact Me Section Starts*/
+.contact{
+    padding: 6rem 0;
+}
+.contact-details{
+
+    display: block;
+    width: 65%;
+    background-color: rgb(26, 44, 71);
+    margin: auto;
+    border-radius: 3rem;
+
+    white-space: pre-line;
+}
+input[type="text"],input[type="email"]{
+    height: 5rem;
+    width: 60%;
+    margin: auto;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.555);
+}
+.form-control{
+    display: block;
+    margin: 0;
+    background: transparent;
+    border: 0.2rem solid rgba(238, 64, 64, 0.753);
+    outline: 0;
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    font-family: "Space Mono", Arial, serif;
+}
+input[type='submit']{
+    background-color: rgba(238, 64, 64, 0.753);
+    cursor: pointer;
+    margin: auto;    
+}
+.btn{
+    display: block;
+    color: white;
+    font-family: "Space Mono", Arial, serif;
+    border: 0.2rem solid rgba(238, 64, 64, 0.753);
+    border-radius: 3rem;
+    padding: 0.8rem 2.5rem;
+    font-size: 2rem;    
+}
+/*Contact Me Section Ends*/
+/*Footer Starts*/
+.foot-box{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+}
+.rights::before{
+    content: '';
+    width: 0.2rem;
+    height: 6rem;
+    background-color: rgba(238, 64, 64, 0.753);
+    position: absolute;
+    left: 50%;
+    transform: translateY(-30%);
+}
+.rights{
+    text-align: center;
+    margin: auto 1.5rem;
+    font-size: 1.6rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 100;
+    color: rgb(19, 43, 78);
+}
+.foot-box ul{
+    list-style: none;
+    font-size: 2.5rem;
+    font-family: "ubuntu", sans-serif;
+    color: rgb(19, 43, 78);
+}
+.foot-box ul li{
+    font-family: "ubuntu", sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: rgb(19, 43, 78);
+}
+/*Footer Section Ends*/
